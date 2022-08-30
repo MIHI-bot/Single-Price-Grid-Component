@@ -1,0 +1,131 @@
+        @import url("https://fonts.google.com/specimen/Karla");
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Karla, sans-serif;
+        }
+        
+        @media all and (max-width:1440px) {
+            .main {
+                width: 50%;
+                height: auto;
+                border: none;
+                margin: 0 auto;
+                box-shadow: -2px 2px 10px rgb(99, 86, 86), -2px -2px 10px rgb(99, 86, 86), 2px 2px 10px rgb(99, 86, 86), 2px 2px 10px rgb(99, 86, 86);
+                border-radius: 10px;
+            }
+            .about {
+                padding-top: 10px;
+                width: 100%;
+                height: auto;
+            }
+            h2 {
+                color: hsl(179, 62%, 43%);
+                margin: 1em 0 0 0.5em;
+            }
+            .money_back {
+                color: hsl(71, 73%, 54%);
+                margin: 1em 0 1em 1em;
+            }
+            .about {
+                font-size: 16px;
+                color: #000;
+                margin: 1em 0 1em 1em;
+                width: 90%;
+                height: 50%;
+                background-color: rgb(255, 255, 255);
+            }
+            .contents {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+            }
+            span {
+                font-size: 2em;
+            }
+            .monthly {
+                color: #fff;
+                margin: .1em auto;
+                padding: 1em;
+            }
+            .subscription {
+                padding: 5px 5px;
+                width: 50%;
+            }
+            .sign_up {
+                cursor: pointer;
+                width: 90%;
+                height: auto;
+                border: none;
+                font-weight: bold;
+                line-height: 3;
+                background-color: hsl(71, 73%, 54%);
+                color: #fff;
+                margin: 1em;
+                border-radius: 5px;
+            }
+            .para_sub {
+                color: #fff;
+                margin: 0 0 .5em 0;
+                font-size: 16px;
+                padding-left: 1em;
+            }
+            .whyyy {
+                width: 50%;
+                color: #fff;
+                font-weight: bolder;
+                margin: 0 0 .5em 0;
+            }
+            ul>li {
+                list-style-type: none;
+                color: #fff;
+                margin: .5em 0;
+                font-size: 13px;
+            }
+            .contents {
+                background-color: hsl(179, 89%, 26%);
+            }
+            .why {
+                background-color: hsl(179, 62%, 43%);
+                padding: 20px;
+                width: 50%;
+                margin: 0 0 .5em 0;
+            }
+        }
+        
+        @media all and (max-width: 500px) {
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+            .main {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .contents {
+                display: block;
+                width: 100%;
+            }
+            .why,
+            .subscription {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            .monthly,
+            .para_sub {
+                padding-left: 1em;
+                margin: 0;
+            }
+            .para_sub,.whyyy {
+                margin: 0 0 .5em 0;
+            }
+        }
